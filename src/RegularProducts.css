@@ -1,0 +1,99 @@
+.regular-products {
+  text-align: center;
+}
+
+.category-section {
+  margin-bottom: 50px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  width: 20%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgb(2, 163, 2);
+  border-radius: 5px;
+  height: 400px; /* Ajuste a altura conforme necessário */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-item img {
+  width: 60%; /* A imagem ocupará 100% da largura do contêiner */
+  height: 65%; /* Ajuste a altura conforme necessário */
+  object-fit: contain;
+  border-bottom: 1px solid  rgb(2, 163, 2);
+  align-self: flex-start; /* Centraliza a imagem no topo do contêiner */
+  margin-left: 40px;
+  transition: transform 0.5s ease;
+  transition: border-color 0.3s ease;
+  margin: 10px auto; /* Adiciona espaçamento ao redor da imagem */
+}
+.product-item:hover img {
+  transform: rotate(10deg); /* Aplica uma rotação de 10 graus ao passar o mouse sobre a imagem */
+  border-color: #e64a19;
+}
+.category-title {
+  font-size: 2em;
+  color: #333;
+  border-bottom: 2px solid #ff9800;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  margin-top: 10%;
+  margin-left: 13%;
+  width: 75%;
+}
+
+.category-heading {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: rgb(31, 83, 31);
+  margin-bottom: 50px;
+  font-family: 'Arial', sans-serif;
+  border: 3px solid rgb(18, 211, 18);
+  padding: 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  margin-top: 10%;
+  margin-left: 11%;
+  width: 75%;
+}
+
+.product-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.product-price {
+  color: #ff9800;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.buy-button:hover {
+  background-color: #e64a19;
+}
+@media only screen and (max-width: 767px) {
+  .product-name {
+    font-size: 1.2em; /* Ajusta o tamanho da fonte para telas menores */
+  }
+}

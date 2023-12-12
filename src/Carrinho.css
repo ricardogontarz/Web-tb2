@@ -1,0 +1,126 @@
+
+.carrinho-container {
+    position: absolute;
+    margin-top: 48rem;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    max-width: 80%; /* Largura máxima para as informações */
+   
+  }
+  
+  /* Estilos adicionais conforme necessário */
+  
+  .carrinho-container h1 {
+    text-align: center;
+  }
+  
+  .carrinho-container button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Novo contêiner para os botões */
+  .botoes-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Estilo específico para o botão "Fechar Carrinho" */
+  .carrinho-container button.fechar-carrinho {
+    background-color: #ff9800;
+    color: white;
+
+  }
+  
+  /* Estilo específico para o botão "CONCLUIR COMPRA" */
+  .carrinho-container button.concluir-compra {
+    background-color: #b3e0ff; /* Cor azul clarinho para "CONCLUIR COMPRA" */
+    color: #333;
+  }
+  
+  .informacoes-usuario {
+    max-width: 100%; /* Largura máxima para as informações do usuário */
+  }
+  
+  .carrinho-item {
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .carrinho-item-imagem {
+    width: 50px;
+    margin-right: 10px;
+    border: 2px solid #ff9800;
+    border-radius: 5px;
+  }
+  
+  .carrinho-item-info {
+    flex-grow: 1;
+  }
+  
+  .carrinho-item-nome {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .carrinho-item-preco {
+    color: #ff9800;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .carrinho-item-quantidade {
+    margin-left: auto;
+  }
+  
+  .carrinho-item-total {
+    font-weight: bold;
+    color: #ff9800;
+    font-size: 1.3em;
+    margin-top: 10px;
+    text-align: center;
+  }.carrinho-container h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333; /* Cor do texto do título */
+  border-bottom: 2px solid #ff9800; /* Linha decorativa na cor laranja */
+  padding-bottom: 5px; /* Espaçamento abaixo da linha */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+.frete-gratis-mensagem {
+    text-align: center;
+    color: #000000; /* Cor verde para destacar a mensagem de frete grátis */
+    font-size: 1.0em;
+    margin-top: 10px;
+    border: 2px solid #001c38; 
+    background: linear-gradient(to right, #FF6347, #FFA07A); /* Adiciona um gradiente de verde para um tom mais escuro de verde */
+  } 
+  @media only screen and (max-width: 767px) {
+    .carrinho-container {
+      margin-top: 10%; /* Ajustado o espaço superior para telas menores */
+      max-width: 90%; /* Reduzido a largura máxima para telas menores */
+      margin-top: 120%;
+    }
+  
+    .botoes-container {
+      flex-direction: column; /* Empilhar os botões em telas menores */
+      align-items: center; /* Centralizar os botões em telas menores */
+    }
+  
+    .carrinho-container button {
+      margin: 10px 0; /* Ajustado o espaçamento em telas menores */
+    }
+  }

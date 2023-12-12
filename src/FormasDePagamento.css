@@ -1,0 +1,36 @@
+.formas-pagamento-container {
+    margin-top: 20px;
+  }
+  
+  .formas-pagamento-container h2 {
+    text-align: center;
+    font-size: 1.4em; /* Tamanho do nome um pouco maior */
+    color: #333;
+  }
+  
+  .formas-pagamento-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .formas-pagamento-list li {
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .formas-pagamento-list label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ccc; /* Borda cinza fraca */
+    padding: 8px; /* Espaçamento interno */
+    transition: border-color 0.3s; /* Adiciona uma transição suave na cor da borda */
+  }
+  
+  .formas-pagamento-list input[type="radio"]:checked + label {
+    border-color: #333; /* Borda mais forte quando selecionado */
+  }

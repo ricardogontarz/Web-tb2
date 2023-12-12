@@ -1,0 +1,28 @@
+.footer {
+    background-color: #001c38;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end; /* Alinhar à parte inferior verticalmente */
+    justify-content: space-between;
+    padding: 10px; /* Adicionei um pouco de padding para espaçamento */
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+  }
+  
+  .footer-contact {
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }

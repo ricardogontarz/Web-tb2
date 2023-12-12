@@ -1,0 +1,215 @@
+.featured-products {
+  text-align: center;
+  overflow: hidden;
+  margin-top: 120px;
+  
+}
+
+.featured-products h2 {
+  font-size: 2em;
+  color: #333;
+  border-bottom: 2px solid #ff9800;
+  width: 75%;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+  margin-top: 10%;
+  margin-left: 12%;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-container {
+  display: flex;
+  width: 70%;
+  transition: transform 0.5s ease;
+  margin-top: 5%;
+}
+
+.product {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+}
+
+.product img {
+  width: 350px;
+  height: 55%; /* Ajuste a altura conforme necessário */
+  object-fit: cover;
+  border: 2px solid #251700;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.product-info {
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  margin-bottom: 0%; /* Ajuste o valor conforme necessário */
+}
+
+.product p, .product button {
+  margin: 0;
+}
+
+.product button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.arrow {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active {
+  border: 2px solid #ff9800;
+}
+
+.product-info {
+  color: #555;
+}
+
+.product-name {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.product-price {
+  color: #ff9800;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-style: italic;
+  color: #555;
+}
+
+.product-rating {
+  align-items: center;
+}
+
+.product-rating .filled {
+  color: #ff9800;
+}
+
+.product-rating svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+} 
+@media only screen and (max-width: 767px)
+
+{.featured-products {
+  text-align: center;
+  overflow: hidden;
+  margin-top: 5%; /* Ajustado o espaço superior para telas menores */
+}
+
+.featured-products h2 {
+  font-size: 1.8em; /* Reduzido o tamanho da fonte */
+  width: 90%; /* Aumentado a largura para ocupar mais espaço */
+  margin-bottom: 20px; /* Reduzido o espaçamento inferior */
+  margin-top: 5%; /* Ajustado o espaço superior para telas menores */
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Adicionado espaço inferior para separar do restante do conteúdo */
+}
+
+.product-container {
+  display: flex;
+  width: 90%; /* Ajustado para ocupar 90% da largura do contêiner pai */
+  max-width: 100%; /* Adicionado para garantir que o carrossel não ultrapasse a largura da tela */
+  transition: transform 0.5s ease;
+  margin-top: 5%;
+  margin-bottom: 10px; /* Adicionado espaço inferior para separar do restante do conteúdo */
+}
+
+.product {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px; /* Ajuste o valor conforme necessário */
+}
+
+.product img {
+  width: 100%; /* Mantém a largura total do contêiner pai */
+  max-width: 350px; /* Define um tamanho máximo para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover;
+  border: 2px solid #251700;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.product-info {
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  margin-bottom: 5px; /* Ajuste o valor conforme necessário */
+}
+
+.product button {
+  width: 100%; /* O botão agora ocupa toda a largura do contêiner pai */
+}
+
+/* Estilo adicional para ajustar o ícone de seta em telas menores */
+.arrow {
+  font-size: 0.8em;
+}
+
+.product-name {
+  font-size: 1.5em; /* Reduzido o tamanho da fonte */
+  margin-bottom: 3px; /* Reduzido o espaçamento inferior */
+}
+
+.product-price {
+  font-size: 1.1em; /* Reduzido o tamanho da fonte */
+  margin-bottom: 5px; /* Reduzido o espaçamento inferior */
+}
+
+.product-description {
+  font-size: 0.9em; /* Reduzido o tamanho da fonte */
+  color: #777; /* Ajustado a cor para um tom mais suave */
+}
+
+.product-rating {
+  align-items: center;
+  margin-top: 3px; /* Ajustado o espaçamento superior */
+}
+
+.product-rating .filled {
+  color: #ff9800;
+}
+
+.product-rating svg {
+  width: 16px; /* Reduzido o tamanho do ícone de classificação */
+  height: 16px;
+  margin-right: 2px;
+}
+}

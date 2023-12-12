@@ -1,0 +1,262 @@
+
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.product-info-container {
+  display: flex;
+  border: 2px solid #001f3f;
+  padding: 20px;
+  max-width: 800px;
+  margin-top: 200px;
+}
+
+.product-images {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.product-images img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.5s ease; /* Adiciona uma transição à propriedade 'transform' */
+}
+
+.product-images img:hover {
+  transform: scale(1.1); /* Aumenta a escala da imagem ao passar o mouse sobre ela */
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-options {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border 0.3s ease; /* Adiciona uma transição à propriedade 'border' */
+}
+
+.color-option.selected {
+  border: 2px solid #ff9800;
+}
+
+.price-info {
+  margin-top: 20px;
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.discount {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.pix-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.installment-price {
+  color: #707070;
+  font-size: 0.9em;
+}
+
+.delivery-info {
+  margin-top: 20px;
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+}
+
+.delivery-line {
+  text-decoration: underline;
+  color: #0000cc;
+  font-size: 0.9em;
+}
+
+.product-title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.customer-reviews {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.customer-review {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.customer-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.customer-rating {
+  color: #ff9800;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.customer-comment {
+  font-size: 1em;
+  color: #555;
+}
+@media only screen and (max-width: 767px) {.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  margin-top: 30%;
+}
+
+.product-info-container {
+  display: flex;
+  flex-direction: column; /* Alterado para empilhar em telas menores */
+  align-items: center; /* Centralizado em telas menores */
+  border: 2px solid #001f3f;
+  padding: 20px;
+  max-width: 800px;
+  margin-top: 20px; /* Reduzido o espaçamento para telas menores */
+}
+
+.product-images {
+  margin-bottom: 20px; /* Adicionado espaçamento inferior */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centralizado em telas menores */
+}
+
+.product-images img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.product-images img:hover {
+  transform: scale(1.1);
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* Centralizado em telas menores */
+}
+
+.price-info {
+  margin-top: 20px;
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.discount {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.pix-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.installment-price {
+  color: #707070;
+  font-size: 0.9em;
+}
+
+.delivery-info {
+  margin-top: 20px;
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+}
+
+.delivery-line {
+  text-decoration: underline;
+  color: #0000cc;
+  font-size: 0.9em;
+}
+
+.product-title {
+  font-size: 1.8em; /* Reduzido o tamanho da fonte */
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1.1em; /* Reduzido o tamanho da fonte */
+  color: #666;
+  margin-bottom: 15px; /* Reduzido o espaçamento inferior */
+}
+
+.customer-reviews {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.customer-review {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.customer-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.customer-rating {
+  color: #ff9800;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.customer-comment {
+  font-size: 1em;
+  color: #555;
+}
+}
+h3, p{
+  color: #000;
+}
